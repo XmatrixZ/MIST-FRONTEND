@@ -22,8 +22,6 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" async
     defer></script>
   <link rel="stylesheet" href="css/mist-three.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
   <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
   <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css">
   <script src="https://kit.fontawesome.com/997cc280fa.js" crossorigin="anonymous"></script>
@@ -266,100 +264,8 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-    <script>
+    <!-- <script>
       
-        
-    </script>
-    <script>
-
-
-        $(document).ready(function () {
-          $("#owl-demo").owlCarousel({
-
-            navigation: true, // Show next and prev buttons
-            navigationText: true,
-            slideSpeed: false,
-            paginationSpeed: false,
-
-            items: 1,
-            itemsDesktop: false,
-            itemsDesktopSmall: false,
-            itemsTablet: false,
-            itemsMobile: false,
-            paginationNumbers: true
-          });
-          $("#owl-demo-2").owlCarousel({
-            pagination: false,
-            dots: false,
-            loop: true,
-            autoplay: true,
-            items: 1,
-            itemsDesktop: false,
-            itemsDesktopSmall: false,
-            itemsTablet: false,
-            itemsMobile: false,
-          });
-        });
-    </script>
-    <script type="text/javascript">
-      var frm = $('#answer-form');
-      frm.submit(function (e) {
-        e.preventDefault();
-        $.ajax({
-          type: frm.attr('method'),
-          url: frm.attr('action'),
-          data: frm.serialize(),
-          success: function (data) {
-            if (data.isCorrect) {
-              new Noty({
-                theme: 'metroui',
-                text: `${data.message}`,
-                type: 'success',
-                layout: 'center',
-                timeout: 2500,
-                modal: true,
-                closeWith: ['click']
-              }).show();
-              setInterval(() => {
-                location.reload()
-              }, 2800)
-            } else {
-              new Noty({
-                theme: 'metroui',
-                text: `${data.message}`,
-                type: 'error',
-                layout: 'center',
-                timeout: 2500,
-                modal: true,
-                closeWith: ['click']
-              }).show();
-            }
-          },
-          error: function (data) {
-            console.log('An error occurred.');
-            console.log(data);
-            new Noty({
-              theme: 'metroui',
-              text: `You have been disqualified !`,
-              type: 'error',
-              layout: 'center',
-              timeout: 2500,
-              modal: true,
-              closeWith: ['click']
-            }).show();
-          },
-        });
-      });
-    </script>
-    
-      <script src="/js/countdown.js"></script>
-      
-        <script>
-          $(window).on('load', function () {
-
-            $(".preloader").delay(500).fadeOut();
-          });
-        </script>
 </body>
 
 </html>
