@@ -1,62 +1,65 @@
 @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+@import url('http://fonts.googleapis.com/css?family=Creepster');
 * {
   margin: 0;
   padding: 0;
   outline: 0;
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
-  background-color: #2d3436;
-  background-image:url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
+  background-image: url("../images/bg.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Finger Paint";
 }
-
-#owl-demo .item{
+.navbar-color {
+  background: rgba(165, 255, 222, 0.10);
+  border: 5px solid rgba(0, 0, 0, 0.11);
+  font-family: "Creepster";
+}
+#owl-demo .item {
   display: block;
   width: 100%;
 }
 
-
-#owl-demo .item img{
-  display: block;
-  width: 100%;
-  height: 60vh;
-}
-
-#owl-demo-2 .item{
-  display: block;
-  width: 100%;
-}
-
-
-#owl-demo-2 .item img{
+#owl-demo .item img {
   display: block;
   width: 100%;
   height: 60vh;
 }
 
-.carousel-item{
+#owl-demo-2 .item {
+  display: block;
+  width: 100%;
+}
+
+#owl-demo-2 .item img {
+  display: block;
+  width: 100%;
+  height: 60vh;
+}
+
+.carousel-item {
   height: 90vh;
 }
 
 #myCanvas {
   position: absolute;
-  top:0px;
+  top: 0px;
   z-index: 2;
 }
 
-@media only screen and (min-device-width : 768px) {
+@media only screen and (min-device-width: 768px) {
   .text span {
     -webkit-animation: smoky 5s 5s both infinite;
-            animation: smoky 5s 5s both infinite;
+    animation: smoky 5s 5s both infinite;
   }
   .text span:nth-child(even) {
     -webkit-animation-name: smoky-mirror;
-            animation-name: smoky-mirror;
+    animation-name: smoky-mirror;
   }
 }
 .text span {
@@ -65,7 +68,7 @@ html, body {
   text-shadow: 0 0 0 whitesmoke;
 }
 
-.hero-text{
+.hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -75,12 +78,12 @@ html, body {
   z-index: 4;
 }
 
-.text{
+.text {
   margin: auto;
   text-align: center;
   color: transparent;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @-webkit-keyframes smoky {
@@ -88,8 +91,10 @@ html, body {
     text-shadow: 0 0 40px whitesmoke;
   }
   to {
-    -webkit-transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
-            transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    -webkit-transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg)
+      scale(1.5);
+    transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg)
+      scale(1.5);
     text-shadow: 0 0 20px whitesmoke;
     opacity: 0;
   }
@@ -100,8 +105,10 @@ html, body {
     text-shadow: 0 0 40px whitesmoke;
   }
   to {
-    -webkit-transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
-            transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    -webkit-transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg)
+      scale(1.5);
+    transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg)
+      scale(1.5);
     text-shadow: 0 0 20px whitesmoke;
     opacity: 0;
   }
@@ -111,8 +118,10 @@ html, body {
     text-shadow: 0 0 40px whitesmoke;
   }
   to {
-    -webkit-transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
-            transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    -webkit-transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg)
+      scale(2);
+    transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg)
+      scale(2);
     text-shadow: 0 0 20px whitesmoke;
     opacity: 0;
   }
@@ -122,70 +131,72 @@ html, body {
     text-shadow: 0 0 40px whitesmoke;
   }
   to {
-    -webkit-transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
-            transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    -webkit-transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg)
+      scale(2);
+    transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg)
+      scale(2);
     text-shadow: 0 0 20px whitesmoke;
     opacity: 0;
   }
 }
 .text span:nth-of-type(1) {
   -webkit-animation-delay: 3.1s;
-          animation-delay: 3.1s;
+  animation-delay: 3.1s;
 }
 
 .text span:nth-of-type(2) {
   -webkit-animation-delay: 3.2s;
-          animation-delay: 3.2s;
+  animation-delay: 3.2s;
 }
 
 .text span:nth-of-type(3) {
   -webkit-animation-delay: 3.3s;
-          animation-delay: 3.3s;
+  animation-delay: 3.3s;
 }
 
 .text span:nth-of-type(4) {
   -webkit-animation-delay: 3.4s;
-          animation-delay: 3.4s;
+  animation-delay: 3.4s;
 }
 
 .text span:nth-of-type(5) {
   -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  animation-delay: 3.5s;
 }
 
 .text span:nth-of-type(6) {
   -webkit-animation-delay: 3.6s;
-          animation-delay: 3.6s;
+  animation-delay: 3.6s;
 }
 
 .text span:nth-of-type(7) {
   -webkit-animation-delay: 3.7s;
-          animation-delay: 3.7s;
+  animation-delay: 3.7s;
 }
 
 .text span:nth-of-type(8) {
   -webkit-animation-delay: 3.8s;
-          animation-delay: 3.8s;
+  animation-delay: 3.8s;
 }
 
 .text span:nth-of-type(9) {
   -webkit-animation-delay: 3.9s;
-          animation-delay: 3.9s;
+  animation-delay: 3.9s;
 }
 
 .text span:nth-of-type(10) {
   -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 .text span:nth-of-type(11) {
   -webkit-animation-delay: 4.1s;
-          animation-delay: 4.1s;
+  animation-delay: 4.1s;
 }
 
 .text span:nth-of-type(12) {
   -webkit-animation-delay: 4.2s;
-          animation-delay: 4.2s;
+  animation-delay: 4.2s;
 }
 .firefly {
   position: fixed;
@@ -197,7 +208,8 @@ html, body {
   animation: ease 200s alternate infinite;
   pointer-events: none;
 }
-.firefly::before, .firefly::after {
+.firefly::before,
+.firefly::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1450,7 +1462,9 @@ html, body {
   }
 }
 @keyframes flash {
-  0%, 30%, 100% {
+  0%,
+  30%,
+  100% {
     opacity: 0;
     box-shadow: 0 0 0vw 0vw yellow;
   }
@@ -1471,7 +1485,7 @@ html, body {
 .preloader {
   height: 100vh;
   width: 100vw;
-  background: #393E46;
+  background: #393e46;
   position: fixed;
   top: 0;
   left: 0;
@@ -1496,8 +1510,8 @@ html, body {
 .preloader__circle-line {
   animation: rotate 3.5s ease-in-out infinite;
   border-top: 1px solid transparent;
-  border-left: 1px solid #D65A31;
-  border-right: 1px solid #D65A31;
+  border-left: 1px solid #d65a31;
+  border-right: 1px solid #d65a31;
   border-bottom: 1px solid transparent;
   border-radius: 50%;
   position: absolute;
